@@ -1,4 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-$family-secondary: "Caveat", cursive;
-@import "../node_modules/bulma/bulma.sass";
+$cursive: "Caveat", cursive;
+.cursive-text {
+  font-family: $cursive;
+}
+@import '~antd/dist/antd.css';

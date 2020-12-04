@@ -6,14 +6,15 @@ import HsHandler from "./hshandler";
 //in modal sa fie un input in care sa scrii cati studenti sa adaugi
 //la ok se adauga studentii
 
-const SchoolComponent = () => {
-  const [hschools, setHschools] = useState([
+export const SchoolComponent = () => {
+
+  const [hschools] = useState([
     { name: "HS 1", people: 942 },
-    { name: "HS 2", people: 942 },
-    { name: "HS 3", people: 942 },
+    { name: "HS 2", people: 5322 },
+    { name: "HS 3", people: 1023 },
   ]);
   return (
-    <div className="is-family-secondary subtitle my-3">
+    <div className="cursive-text" style={{fontSize:16, textAlign: "center"}}>
       {hschools.map((hs) => (
         <HsHandler hs={hs} />
       ))}
@@ -21,4 +22,4 @@ const SchoolComponent = () => {
   );
 };
 
-export default SchoolComponent;
+

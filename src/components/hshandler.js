@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import { Button } from 'antd';
 
 const HsHandler = (props) => {
   const [people, setPeople] = useState(props.hs.people);
-
   const addStudent = () => {
     setPeople(people + 1);
   };
@@ -11,16 +11,18 @@ const HsHandler = (props) => {
   };
 
   return (
-    <div className="has-text-centered">
-      <p className="my-4">
+    <div>
+      <p>
         {props.hs.name} - <strong>{people} de elevi</strong>
       </p>
-      <button className="button is-success is-rounded" onClick={addStudent}>
-        Adauga elevi
-      </button>
-      <button className="button is-danger is-rounded" onClick={removeStudent}>
+      <Button type="primary" shape="round" onClick={addStudent}>
+        Adauga Elevi
+      </Button>
+
+      <Button  type="warning" shape="round" onClick={removeStudent}>
         Scoate Elevi
-      </button>
+      </Button>
+        <br/><br/>
     </div>
   );
 };
