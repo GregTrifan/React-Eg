@@ -18,7 +18,7 @@ function App() {
         <Title style={{ textAlign: 'center'}}>Index Page</Title>
         <SchoolComponent/>
         </Content>
-        <Footer style={{ textAlign: 'center', padding: '450px 0 0 0'}}>
+        <Footer style={{ textAlign: 'center', padding: '470px 0 0 0'}}>
                 Copyright {new Date().getFullYear()}
         </Footer>
     </Layout>
