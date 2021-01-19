@@ -12,7 +12,7 @@ function App() {
   return (
     <Layout className="layout">
         <Header>
-      <Navbar />
+      <Navbar/>
         </Header>
         <Content className="site-layout-content">
         <Title style={{ textAlign: 'center'}}>Index Page</Title>
